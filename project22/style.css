@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color:rgb(241, 235, 222);
+}
+
+/* Navigation */
+nav {
+  background: #ccc7c7;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #8528db;
+}
+.logo span {
+  background: linear-gradient(90deg, #ff69b4, #0077cc, #2a9d8f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+
+.logo span {
+  color: #0077cc;   
+}
+.logo svg { margin-right: 8px; }
+.links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  fill: #22ca39;
+}
+.links a:hover { color: #0b0d94; }
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background: url("hero-bg.jpg") center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(79, 100, 223, 0.5);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 20px;
+}
+.hero h1 { font-size: 3rem; margin-bottom: 10px; }
+.hero p { font-size: 1.2rem; margin-bottom: 20px; }
+.btn {
+  display: inline-block;
+  padding: 14px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background: #3c088f;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.btn:hover { background: #2f089b; }
+
+/* Sections */
+section { padding: 40px 20px; max-width: 900px; margin: auto; }
+h2 { text-align: center; margin-bottom: 20px; }
+
+/* Forms */
+form { display: flex; flex-direction: column; gap: 10px; }
+form input, form select, form textarea, form button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+form button {
+  background: #3916d4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+form button:hover { background: #22ca39; }
+.location-actions button { margin-right: 10px; }
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #f4f4f4;
+  margin-top: 40px;
+}
