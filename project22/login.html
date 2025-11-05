@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Login</title>
+</head>
+<body>
+  <h2>Admin Login</h2>
+  <form onsubmit="return checkLogin()">
+    <input type="password" id="password" placeholder="Enter Admin Password" required>
+    <button type="submit">Login</button>
+  </form>
+
+  <script>
+    function checkLogin() {
+      const pass = document.getElementById("password").value;
+      if (pass === "admin123") { // Change this later!
+        sessionStorage.setItem("isAdmin", "true");
+        window.location.href = "admin.html";
+        return false;
+      } else {
+        alert("Wrong password!");
+        return false;
+      }
+    }
+  </script>
+</body>
+</html>
